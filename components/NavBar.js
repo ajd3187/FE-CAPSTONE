@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import Link from 'next/link';
+// import { useRouter } from 'next/router';
 import {
   Navbar, Container, Nav, Button,
 } from 'react-bootstrap';
@@ -20,10 +21,10 @@ export default function NavBar() {
             <Link passHref href="/">
               <Nav.Link>Home</Nav.Link>
             </Link>
-            <Link passHref href="/">
+            <Link passHref href="/patrons">
               <Nav.Link>Patrons</Nav.Link>
             </Link>
-            <Link passHref href="/">
+            <Link passHref href="/clients">
               <Nav.Link>Clients</Nav.Link>
             </Link>
             <Button variant="danger" onClick={signOut}>Sign Out</Button>
